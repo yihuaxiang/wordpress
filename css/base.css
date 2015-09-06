@@ -1,0 +1,35 @@
+/*
+Theme Name: 移花香
+Theme URI: 51shazhu.com
+Description: 51shazhu.com
+Version: 1.0
+Author: 移花香
+Author URI: 51shazhu.com
+Tags: 51shazhu.com
+*/
+
+/* Global Styles */
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.clear:after{
+    content:"";
+    display:table;
+    clear:both;
+
+}
+a{
+    color:white;
+}
+a:hover{
+    text-decoration: none;
+}
+.cursor{
+    cursor:pointer;
+}
+div.hr{
+    height:8px;
+}

@@ -1,0 +1,129 @@
+#sidebar{
+    width:300px;
+    border:1px #013a73 solid;
+    padding-left:0px;
+    color:white;
+    background:url("../images/main_back.png");
+    margin-top:14px;
+}
+#sidebar a:hover{
+    color:#1E6FC5;
+    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#search{
+    float: left;
+    color: #999;
+    border: solid 1px #ddd;
+    width: 40%;
+    height: 32px;
+    padding: 4px 12px;
+    border-right: none;
+    font-size: 16px;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+
+    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#search:focus{
+    width:70%;
+}
+#button{
+color: #fff;
+    border: none;
+    background: #45B6F7;
+    height: 32px;
+    font-size: 16px;
+    padding: 0 12px;
+    border-radius: 0 2px 2px 0;
+    width: 20%;
+}
+#sidebar h4{
+    font-size:24px;
+    font-weight:normal;
+}
+#sidebar h4:first-letter {
+    font-size: 26px;
+    line-height: 46px;
+    padding-right: 5px;
+}
+#sidebar h4{
+    height:46px;
+    line-height:46px;
+    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#sidebar > ul > li:hover > h4{
+    padding-left:20px;
+}
+#sidebar > ul > li{
+    height:46px;
+    position:relative;
+    border-bottom:1px #013a73 solid;
+    padding-left:20px;
+    overflow:hidden;
+    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#sidebar > ul > li:before {
+    content: "";
+    width: 142px;
+    height: 0px;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    border-bottom: 3px rgba(22, 59, 128, 0.83) solid;
+
+    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#sidebar > ul > li:hover:before{
+    content: "";
+    width: 172px;
+    height: 0px;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    border-bottom: 3px rgba(22, 59, 128, 0.83) solid;
+}
+#sidebar > ul > li.hover{
+    height:inherit;
+}
+
+#sidebar > ul >li >p{
+    line-height:29px;
+    font-size:14px;
+}
+#sidebar > ul > li > ul >li{
+    line-height:29px;
+    height:29px;
+    cursor:pointer;
+    font-size:14px;
+    overflow: hidden;
+}
+#sidebar > ul > li > ul > li > a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    line-height:29px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    white-space: nowrap;
+}

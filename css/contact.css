@@ -1,0 +1,59 @@
+#main h2{
+    color:white;
+    font-size:24px;
+    line-height: 40px;
+}
+#main p{
+    color:#999;
+    line-height:24px;
+}
+
+
+#intro_div{
+    border:1px #013a73 solid;
+    padding-left:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:6px;
+    padding-right:20px;
+}
+
+
+#sidebar{
+    width:300px;
+    border:1px #013a73 solid;
+    padding-left:0px;
+    color:white;
+    background:url("../images/main_back.png");
+    margin-top:14px;
+}
+
+#sidebar > div{
+    padding-top:20px;
+}
+#sidebar > div >*{
+    padding-left:20px;
+}
+#sidebar > div >h4{
+    border-bottom:1px #013a73 solid;
+    border-top:1px #013a73 solid;
+    position:relative;
+}
+#sidebar > div > h4:before{
+    content:"";
+    width:119px;
+    height:0px;
+    position:absolute;
+    top:-1px;
+    left:-1px;
+    border-bottom:3px rgba(22, 59, 128, 0.83) solid;
+}
+
+#info h4{
+    font-size:18px;
+    line-height:36px;
+}
+#info li{
+    height:24px;
+    line-height:24px;
+}

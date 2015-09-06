@@ -1,0 +1,41 @@
+#navi{
+    height: 64px;
+    background: #0d5ab1;
+    position:relative;
+}
+#navi h1{
+    display: inline-block;
+    line-height: 64px;
+    height: 64px;
+    width: 155px;
+    text-align: center;
+    margin-left:20px;
+
+}
+#navi h1 a{
+
+}
+#navi h1 a:hover{
+
+}
+#navi ul{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#navi ul li{
+    float:left;
+    line-height:64px;
+    height:64px;
+    margin:0 10px;
+}
+#navi ul li.current,#navi ul li.current_page_item{
+    background:#02284f;
+}
+#navi ul li a{
+    display:inline-block;
+    height:100%;
+    width:100%;
+    font-size:22px;
+    padding:0 15px;
+}

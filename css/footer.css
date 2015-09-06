@@ -1,0 +1,8 @@
+#footer{
+    text-align:center;
+    color:white;
+    clear:both;
+}
+#footer a:hover{
+    text-decoration: underline;
+}
