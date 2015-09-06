@@ -1,3 +1,18 @@
 #main p{
     color:#999;
 }
+#main .post p.relative{
+    height:23px;
+}
+#main .post p.relative a:last-child{
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:19px;
+    line-height:19px;
+}
+#main .post p.relative a:first-child{
+    position:absolute;
+    top:0px;
+    left:0px;
+}

@@ -9,6 +9,8 @@ body{
 
 
 .button{
+    height:19px;
+    line-height:19px;
     padding: 5px;
     padding-bottom:1px;
     padding-top:1px;

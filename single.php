@@ -2,7 +2,7 @@
 
 
 
-
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/single.css" />
 	<!-- Column 1 /Content -->
 	<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 	<div id="main" class="left clear" style="margin-top:14px;">
@@ -19,7 +19,7 @@
 			<?php the_content(); ?>
 			<!-- Post Links -->
 			<br />
-			<p class=""> <a href="<?php echo get_option('home'); ?>" class="button float" >&lt;&lt; 返回首页</a> <a href="#comment_form" class="button float right" >发表评论</a> </p>
+			<p class="relative"> <a href="<?php echo get_option('home'); ?>" class="button float" >&lt;&lt; 返回首页</a> <a href="#comment_form" class="button float" >发表评论</a> </p>
 		</div>
 		<div class="hr clearfix">&nbsp;</div>
 		<?php comments_template(); ?>

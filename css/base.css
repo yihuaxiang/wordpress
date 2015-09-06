@@ -33,3 +33,6 @@ a:hover{
 div.hr{
     height:8px;
 }
+.relative{
+    position:relative;
+}
