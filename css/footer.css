@@ -6,3 +6,25 @@
 #footer a:hover{
     text-decoration: underline;
 }
+
+#to_top{
+    position:fixed;
+    display:block;
+    bottom:50px;
+    right:50px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+    opacity: 0;
+    -webkit-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#to_top:hover{
+    color: rgba(35, 80, 249, 0.68);
+}
+#to_top.show{
+    opacity: 1;
+}
