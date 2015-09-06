@@ -5,7 +5,7 @@
             <li>
                 <form method="get" action="<?php echo get_option('home'); ?>">
 
-                    <input type="search" id="search" name="s" placeholder="搜索文章" />
+                    <input type="search" id="search" name="s" placeholder="搜索关键字" />
                     <input type="hidden" value="submit" />
                     <button type="submit" id="button" >回车</button>
                     <div class="hr clearfix">&nbsp;</div>
