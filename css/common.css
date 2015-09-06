@@ -41,11 +41,16 @@ body{
 #main .post {
     color:#999;
     border: 1px solid #013a73;
+    padding-left:20px;
+    word-break: break-word;
     -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#main .post > h3:first-of-type{
+    margin-left:-20px;
 }
 #main .post h3,#main .post p{
     padding-left:17px;
