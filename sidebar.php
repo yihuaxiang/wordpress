@@ -37,7 +37,7 @@
         <li>
 
             <h4>4标签云</h4>
-            <p><?php wp_tag_cloud('smallest=8&largest=22'); ?></p>
+            <p><?php wp_tag_cloud('smallest=14&largest=14&unit=px'); ?></p>
 
         </li>
         <li>
