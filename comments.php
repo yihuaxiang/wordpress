@@ -50,7 +50,7 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
 <form id="comment_form" name="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
     <h3>发表评论</h3>
     <div class="hr dotted clearfix">&nbsp;</div>
-    <ul>
+    <ul id="respond">
         <?php if ( !is_user_logged_in() ) : ?>
         <li class="clearfix">
             <label for="name">昵称</label>
@@ -58,7 +58,7 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
         </li>
         <li class="clearfix">
             <label for="email">电子邮件</label>
-            <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="23" tabindex="2" />
+            <input type="email" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="23" tabindex="2" />
         </li>
 
 <!--         <li class="clearfix">
@@ -75,7 +75,7 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
         <li class="clearfix">
             <!-- Add Comment Button -->
             <br />
-            <a id="comments_submit_button" href="javascript:void(0);" onClick="Javascript:document.forms['commentform'].submit()" class="button medium black right">发表评论</a> </li>
+            <a id="comments_submit_button" href="javascript:void(0);" class="button medium black right">发表评论</a> </li>
             <br />
             <br />
     </ul>

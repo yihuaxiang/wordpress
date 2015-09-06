@@ -70,6 +70,18 @@
     background:#fcfcfc;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
+
+
+}
+#comment_form input,#comment_form textarea{
+        -webkit-transition: all 0.9s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.9s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.9s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.9s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.9s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#comment_form input.error,#comment_form textarea.error{
+    border-color:red;
 }
 #contact_form input#name, #contact_form input#email, #contact_form input#subject {
     width:400px;
