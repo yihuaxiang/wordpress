@@ -1,17 +1,21 @@
    <!-- Column 2 / Sidebar -->
    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/sidebar.css" />
+   <div id="search_div" class="right">
+        <ul>
+            <li>
+                <form method="get" action="<?php echo get_option('home'); ?>">
+
+                    <input type="search" id="search" name="s" placeholder="搜索文章" />
+                    <input type="hidden" value="submit" />
+                    <button type="submit" id="button" >搜索</button>
+                    <div class="hr clearfix">&nbsp;</div>
+                </form>
+            </li>
+        </ul>
+   </div>
     <div id="sidebar" class="right">
     <ul>
-        <li>
-            <h4>1搜索</h4>
-            <form method="get" action="<?php echo get_option('home'); ?>">
 
-                <input type="search" id="search" name="s" placeholder="搜索文章" />
-                <input type="hidden" value="submit" />
-                <button type="submit" id="button" >搜索</button>
-                <div class="hr clearfix">&nbsp;</div>
-            </form>
-        </li>
         <li>
             <h4>2分类目录</h4>
             <ul>

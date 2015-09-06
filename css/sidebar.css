@@ -1,4 +1,11 @@
-#sidebar{
+#search_div{
+    padding-top:12px;
+}
+#search_div li{
+    padding-left:16px;
+}
+
+#sidebar,#search_div{
     width:300px;
     border:1px #013a73 solid;
     padding-left:0px;

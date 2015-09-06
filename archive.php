@@ -109,8 +109,10 @@ else if ( isset($_GET['order']) && ($_GET['order']=='alpha') )
 		<p class="clearfix"><?php previous_posts_link('&lt;&lt; 查看新文章', 0); ?> <span class="float right"><?php next_posts_link('查看旧文章 &gt;&gt;', 0); ?></span></p>
 
 		<?php else : ?>
-		<h1 class="title"><a href="#" rel="bookmark">未找到</a></h1>
-		<p>没有找到任何文章！</p>
+		<div class="post">
+			<h1 class="title"><a href="#" rel="bookmark">未找到</a></h1>
+			<p>没有找到任何文章！</p>
+		</div>
 		<?php endif; ?>
 	</div>
 	<?php get_sidebar(); ?>
