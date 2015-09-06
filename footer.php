@@ -3,8 +3,10 @@
     <div class="hr clearfix">&nbsp;</div>
     <BR />
     <p id="footer">
+        <br />
         <span class="float">版权所有 &copy; 2015 <a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a>
         </span>
+        <br />
     </p>
     <BR />
 </div>

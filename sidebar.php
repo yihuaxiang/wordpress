@@ -4,7 +4,7 @@
     <ul>
         <li>
             <h4>1搜索</h4>
-            <form method="get" action="http://localhost/wordpress/">
+            <form method="get" action="<?php echo get_option('home'); ?>">
 
                 <input type="search" id="search" name="s" placeholder="搜索文章" />
                 <input type="hidden" value="submit" />
