@@ -2,6 +2,12 @@
     height: 64px;
     background: #0d5ab1;
     position:relative;
+
+}
+#navi .container{
+    width:1200px;
+    margin:0 auto;
+    position:relative;
 }
 #navi h1{
     display: inline-block;

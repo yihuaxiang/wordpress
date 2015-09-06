@@ -7,7 +7,7 @@
 
                     <input type="search" id="search" name="s" placeholder="搜索文章" />
                     <input type="hidden" value="submit" />
-                    <button type="submit" id="button" >搜索</button>
+                    <button type="submit" id="button" >回车</button>
                     <div class="hr clearfix">&nbsp;</div>
                 </form>
             </li>

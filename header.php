@@ -87,14 +87,17 @@ $keywords = trim(strip_tags($keywords));
 
 <?php flush(); ?>
 <body>
+<div id="navi">
+  <div class="container">
+      <h1 ig="logo" class=""><a href="<?php echo get_option('home'); ?>"><span class="icon-home"></span><?php bloginfo("name"); ?></a></h1>
+      <ul class=" clear">
+          <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
+          <li  <?php if (is_home()){echo "class=current";} ?> ><a class="left" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">主页</a></li>
+      </ul>
+  </div>
+</div>
 <div id="wrapper" class=>
-    <div id="navi">
-        <h1 ig="logo" class=""><a href="<?php echo get_option('home'); ?>"><span class="icon-home"></span><?php bloginfo("name"); ?></a></h1>
-        <ul class=" clear">
-            <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
-            <li  <?php if (is_home()){echo "class=current";} ?> ><a class="left" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">主页</a></li>
-        </ul>
-    </div>
+
 
     <div class="hr grid_12 clearfix">&nbsp;</div>
     <!-- Caption Line -->
