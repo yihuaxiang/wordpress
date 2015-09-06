@@ -85,6 +85,9 @@ color: #fff;
     -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
 }
+#sidebar > ul > li:first-of-type{
+    height:initial;
+}
 #sidebar > ul > li:before {
     content: "";
     width: 142px;

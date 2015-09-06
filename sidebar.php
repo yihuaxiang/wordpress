@@ -17,7 +17,7 @@
     <ul>
 
         <li>
-            <h4>2分类目录</h4>
+            <h4>1分类目录</h4>
             <ul>
                 <?php wp_list_categories('depth=1&title_li=&orderby=id&show_count=0&hide_empty=1&child_of=0'); ?>
             </ul>
@@ -25,7 +25,7 @@
         </li>
         <li>
 
-            <h4>3最新文章</h4>
+            <h4>2最新文章</h4>
             <ul>
                 <?php
                     $posts = get_posts('numberposts=6&orderby=post_date');
@@ -40,13 +40,13 @@
         </li>
         <li>
 
-            <h4>4标签云</h4>
+            <h4>3标签云</h4>
             <p><?php wp_tag_cloud('smallest=14&largest=14&unit=px'); ?></p>
 
         </li>
         <li>
 
-            <h4>5文章存档</h4>
+            <h4>4文章存档</h4>
             <ul>
                 <?php wp_get_archives('limit=10'); ?>
             </ul>
@@ -74,7 +74,7 @@
             ORDER BY comment_ID DESC
             LIMIT 10"); ?>
 
-            <h4>6最新评论</h4>
+            <h4>5最新评论</h4>
             <ul>
             <?php foreach($pop as $post) : ?>
             <li><a href="<?php echo get_permalink($post->comment_post_ID); ?>"><?php echo get_the_title($post->comment_post_ID); ?></a></li>
@@ -83,7 +83,7 @@
 
         </li>
         <li>
-            <h4>7热门文章</h4>
+            <h4>6热门文章</h4>
             <ul><?php $result = $wpdb->get_results("SELECT comment_count,ID,post_title FROM $wpdb->posts ORDER BY comment_count DESC LIMIT 0 , 5");
             foreach ($result as $post) {
             setup_postdata($post);
