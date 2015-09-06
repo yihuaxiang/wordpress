@@ -52,7 +52,7 @@ body{
 #main .post > h3:first-of-type{
     margin-left:-20px;
 }
-#main .post h3,#main .post p{
+#main .post h3:first-of-type,#main .post p:first-of-type{
     padding-left:17px;
 }
 #main .post h3{

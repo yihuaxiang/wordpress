@@ -18,6 +18,7 @@
 			<!-- Post Content -->
 			<?php the_content(); ?>
 			<!-- Post Links -->
+			<br />
 			<p class=""> <a href="<?php echo get_option('home'); ?>" class="button float" >&lt;&lt; 返回首页</a> <a href="#comment_form" class="button float right" >发表评论</a> </p>
 		</div>
 		<div class="hr clearfix">&nbsp;</div>

@@ -1,5 +1,6 @@
 #search_div{
     padding-top:12px;
+    margin-top:14px;
 }
 #search_div li{
     padding-left:16px;
@@ -11,7 +12,9 @@
     padding-left:0px;
     color:white;
     background:url("../images/main_back.png");
-    margin-top:14px;
+}
+#sidebar{
+    margin-top:8px;
 }
 #sidebar a:hover{
     color:#1E6FC5;
