@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 	<!-- Column 1 /Content -->
-	<div class="grid_8">
-		<div class="sorting">
+
+	<div id="main">
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/archive.css" />
+		<div id="archive">
 			<div class="sort_by">
-				<h4>排序</h4>
 				<ul>
 					<li><a <?php if ( isset($_GET['order']) && ($_GET['order']=='rand') ) echo 'class="current"'; ?> href="<?php echo curPageURL() . '?' . http_build_query(array_merge($_GET, array('order' => 'rand'))); ?>">随机阅读</a></li>
 					<li><a <?php if ( isset($_GET['order']) && ($_GET['order']=='commented') ) echo 'class="current"'; ?> href="<?php echo curPageURL() . '?' . http_build_query(array_merge($_GET, array('order' => 'commented'))); ?>">评论最多</a></li>
@@ -42,6 +43,7 @@
 			}
 			?>
 	</div>
+	<div class="hr clearfix">&nbsp;</div>
 <?php
 global $wp_query;
 
@@ -87,11 +89,11 @@ else if ( isset($_GET['order']) && ($_GET['order']=='alpha') )
     query_posts($arms);
 } if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<!-- Blog Post -->
-		<div class="post">
+		<div class="post clear">
 			<!-- Post Title -->
-			<h1 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<h3 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 			<!-- Post Data -->
-			<p class="sub"><?php the_tags('标签：', ', ', ''); ?> &bull; <?php the_time('Y年n月j日') ?> &bull; <?php comments_popup_link('0 条评论', '1 条评论', '% 条评论', '', '评论已关闭'); ?>
+			<p class="sub"><?php the_tags('<span class="icon-price-tags"></span> : ', ', ', ''); ?> &bull; <span class="icon-clock"></span> <?php the_time('Y年n月j日') ?> &bull; <span class="icon-bubble"></span> <?php comments_popup_link('0 条评论', '1 条评论', '% 条评论', '', '评论已关闭'); ?>
 </p>
 			<div class="hr dotted clearfix">&nbsp;</div>
 			<!-- Post Content -->

@@ -8,6 +8,23 @@ body{
 }
 
 
+.button{
+    padding: 5px;
+    padding-bottom:1px;
+    padding-top:1px;
+    border-radius: 3px;
+    border: 1px #2222C7 solid;
+    background-color: #2A4056;
+    -webkit-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+.button:hover{
+    border: 1px #9B9BF7 solid;
+    background-color: #2246F3;
+}
 
 
 

@@ -14,7 +14,7 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-                <div class="post">
+                <div class="post clear">
                     <!-- Post Title -->
                     <h3 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
                     <!-- Post Data -->
@@ -26,7 +26,7 @@
                     <?php the_excerpt(); ?>
 
                     <!-- Read More Button -->
-                    <!--<p class="clearfix"><a href="<?php the_permalink(); ?>" class="button right">阅读全文</a></p>-->
+                    <p class="clearfix"><a href="<?php the_permalink(); ?>" class="button right">阅读全文</a></p>
                 </div>
                 <div class="hr clearfix">&nbsp;</div>
 
