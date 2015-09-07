@@ -64,3 +64,49 @@ function aurelius_comment($comment, $args, $depth)
 			</div>
 		</div>
 <?php } ?>
+
+<?php
+//以下代码增加编辑器，不过感觉不好用
+function add_editor_buttons($buttons) {
+
+$buttons[] = 'fontselect';
+
+$buttons[] = 'fontsizeselect';
+
+$buttons[] = 'cleanup';
+
+$buttons[] = 'styleselect';
+
+$buttons[] = 'hr';
+
+$buttons[] = 'del';
+
+$buttons[] = 'sub';
+
+$buttons[] = 'sup';
+
+$buttons[] = 'copy';
+
+$buttons[] = 'paste';
+
+$buttons[] = 'cut';
+
+$buttons[] = 'undo';
+
+$buttons[] = 'image';
+
+$buttons[] = 'anchor';
+
+$buttons[] = 'backcolor';
+
+$buttons[] = 'wp_page';
+
+$buttons[] = 'charmap';
+
+return $buttons;
+
+}
+
+add_filter("mce_buttons_3", "add_editor_buttons");
+
+?>

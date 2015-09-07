@@ -14,32 +14,32 @@
 			<h4>浏览<?php
 			// If this is a category archive
 			if (is_category()) {
-				printf('分类</h4>
+				printf('分类:</h4>
 			<h2>'.single_cat_title('', false).'</h2>' );
 				if (category_description()) echo '<p>'.category_description().'</p>';
 			// If this is a tag archive
 			} elseif (is_tag()) {
-				printf('标签</h4>
+				printf('标签:</h4>
 			<h2>'.single_tag_title('', false).'</h2>' );
 				if (tag_description()) echo '<p>'.tag_description().'</p>';
 			// If this is a daily archive
 			} elseif (is_day()) {
-				printf('日期存档</h4>
+				printf('日期存档:</h4>
 			<h2>'.get_the_time('Y年n月j日').'</h2>' );
 			// If this is a monthly archive
 			} elseif (is_month()) {
-				printf('月份存档</h4>
+				printf('月份存档:</h4>
 				<h2>'.get_the_time('Y年n月').'</h2>' );
 			// If this is a yearly archive
 			} elseif (is_year()) {
-				printf('年份存档</h4>
+				printf('年份存档:</h4>
 				<h2>'.get_the_time('Y年').'</h2>' );
 				// If this is an author archive
 			} elseif (is_author()) {
-					echo '作者存档';
+					echo '作者存档:';
 			// If this is a paged archive
 			} elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {
-				echo '博客存档';
+				echo '博客存档:';
 			}
 			?>
 	</div>
@@ -110,7 +110,7 @@ else if ( isset($_GET['order']) && ($_GET['order']=='alpha') )
 
 		<?php else : ?>
 		<div class="post">
-			<h1 class="title"><a href="#" rel="bookmark">未找到</a></h1>
+			<h3 class="title"><a href="#" rel="bookmark">未找到</a></h3>
 			<p>没有找到任何文章！</p>
 		</div>
 		<?php endif; ?>
