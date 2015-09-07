@@ -54,10 +54,14 @@ body{
 #main .post > h3:first-of-type{
     margin-left:-20px;
 }
+#main .post > p:first-of-type{
+    border-bottom: 1px dashed rgba(80, 110, 255, 0.22);
+}
 #main .post h3:first-of-type,#main .post p:first-of-type{
     padding-left:17px;
+
 }
-#main .post h3{
+#main .post > h3:first-of-type{
     -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
@@ -93,6 +97,31 @@ body{
 }
 
 
+#main .pagenav{
+    text-align:center;
+}
+#main .pagenav p{
+    display:inline-block;
+}
+#main .pagenav a,#main .pagenav span{
+    margin: 0 2px;
+    float: left;
+    padding: 5px 12px;
+    background-color: #ddd;
+    color: #666;
+    border-radius: 2px;
+    opacity: .88;
+}
+#main .pagenav p a:last-child{
+    margin:0px;
+    padding-left:3px;
+    background-color: rgba(0,0,0,0);
+    border-color:rgba(0,0,0,0);
+}
+#main .pagenav .current{
+    background-color: rgb(42, 121, 171);
+    color: #fff;
+}
 
 
 

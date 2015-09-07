@@ -34,9 +34,13 @@
         <?php endwhile; ?>
 
 
+
+        <br />
+        <div class="pagenav clear"><p><?php native_pagenavi();?></p></div>
+        <br />
         <!-- Blog Navigation -->
         <!--<p class="clearfix"> <a href="#" class="button float">&lt;&lt; Previous Posts</a> <a href="#" class="button float right">Newer Posts >></a> </p>-->
-        <p class="clearfix"><?php previous_posts_link('&lt;&lt; 上一页', 0); ?> <span class=""><?php next_posts_link('下一页 &gt;&gt;', 0); ?></span></p>
+        <!-- <p class="clearfix"><?php previous_posts_link('&lt;&lt; 上一页', 0); ?> <span class=""><?php next_posts_link('下一页 &gt;&gt;', 0); ?></span></p> -->
         <?php else : ?>
         <div class="post">
             <h3 class="title"><a href="#" rel="bookmark">未找到</a></h3>

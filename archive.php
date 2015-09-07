@@ -105,8 +105,12 @@ else if ( isset($_GET['order']) && ($_GET['order']=='alpha') )
 		<div class="hr clearfix">&nbsp;</div>
 		<?php endwhile; ?>
 
+
+        <br />
+        <div class="pagenav clear"><p><?php native_pagenavi();?></p></div>
+        <br />
 		<!-- Blog Navigation -->
-		<p class="clearfix"><?php previous_posts_link('&lt;&lt; 查看新文章', 0); ?> <span class="float right"><?php next_posts_link('查看旧文章 &gt;&gt;', 0); ?></span></p>
+		<!-- <p class="clearfix"><?php previous_posts_link('&lt;&lt; 查看新文章', 0); ?> <span class="float right"><?php next_posts_link('查看旧文章 &gt;&gt;', 0); ?></span></p> -->
 
 		<?php else : ?>
 		<div class="post">

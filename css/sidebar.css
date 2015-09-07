@@ -46,9 +46,11 @@
     width:70%;
 }
 #button{
-color: #fff;
+    color: #fff;
     border: none;
-    background: #45B6F7;
+    cursor:pointer;
+    outline: none;
+    background: rgba(69, 182, 247, 0.61);
     height: 32px;
     font-size: 16px;
     padding: 0 12px;
@@ -81,6 +83,7 @@ color: #fff;
     position:relative;
     border-bottom:1px #013a73 solid;
     padding-left:20px;
+    padding-right:20px;
     overflow:hidden;
     -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);

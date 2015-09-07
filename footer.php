@@ -17,6 +17,6 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/comments.js"></script>
 <!--end wrapper-->
 <?php wp_footer(); ?>
-<div id="to_top"><span class="icon-home2"></span></div>
+<div id="to_top"><span class="icon-home2"></span><span class="icon-home2"></span></div>
 </body>
 </html>

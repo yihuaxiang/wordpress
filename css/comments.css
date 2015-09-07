@@ -136,6 +136,8 @@
 }
 #comments_submit_button{
     padding:5px;
+    padding-top:0px;
+    padding-bottom:0px;
     border-radius:3px;
     border:1px #2222C7 solid;
     background-color:#2A4056;
@@ -148,6 +150,8 @@
 }
 #comments_submit_button:hover{
     padding: 5px;
+    padding-top:0px;
+    padding-bottom:0px;
     border-radius: 3px;
     border: 1px #9B9BF7 solid;
     background-color: #2246F3;

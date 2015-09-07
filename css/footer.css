@@ -2,6 +2,7 @@
     text-align:center;
     color:white;
     clear:both;
+    line-height:24px;
 }
 #footer a:hover{
     text-decoration: underline;
@@ -16,6 +17,7 @@
     font-size:40px;
     cursor:pointer;
     opacity: 0;
+    overflow:hidden;
     -webkit-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
     -moz-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
     -o-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
@@ -23,8 +25,39 @@
     transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
 }
 #to_top:hover{
-    color: rgba(35, 80, 249, 0.68);
+    /*color: rgba(35, 80, 249, 0.68);*/
 }
 #to_top.show{
     opacity: 1;
+}
+#to_top span:first-of-type{
+    color:white;
+    position:relative;
+    top:0px;
+    z-index:1;
+
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#to_top span:last-of-type{
+    color:rgba(35, 80, 249, 0.68);
+    position:absolute;
+    top:-50px;
+    left:0px;
+    z-index:10;
+
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#to_top:hover span:last-of-type{
+    top:0px;
+}
+#to_top:hover span:first-of-type{
+    top:50px;
 }
