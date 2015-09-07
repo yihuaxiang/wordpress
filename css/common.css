@@ -112,7 +112,7 @@ body{
     border-radius: 2px;
     opacity: .88;
 }
-#main .pagenav p a:last-child{
+#main .pagenav p a.total:last-child{
     margin:0px;
     padding-left:3px;
     background-color: rgba(0,0,0,0);
