@@ -43,7 +43,7 @@
     font-size:20px;
 }
 #comments li{
-    padding-bottom:20px;
+    padding-bottom:0px;
 }
 
 #contact_form ul {
@@ -98,6 +98,16 @@
 
     #comment_form ul {
     float:left;
+    width:100%;
+}
+#comment_form ul li input:first-of-type{
+    width:35%;
+}
+#comment_form ul li input:last-of-type{
+    width:58%;
+}
+#comment_form ul li textarea{
+    width:96%;
 }
 #comment_form ul li {
     margin:10px 0;
@@ -126,8 +136,8 @@
     outline:none;
 }
 #comment_form input {
-    width:400px;
     height:11px;
+    line-height: 20px;
 }
 #comment_form textarea {
     width:500px;

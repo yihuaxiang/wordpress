@@ -47,35 +47,36 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
 <p>你必须 <a href="<?php echo wp_login_url( get_permalink() ); ?>">登录</a> 才能发表评论.</p>
 <?php else  : ?>
 <!-- Comment Form -->
-<form id="comment_form" name="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
+<form id="comment_form" name="commentform" class="clear" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
     <h3>发表评论</h3>
-    <div class="hr dotted clearfix">&nbsp;</div>
+    <div class="hr dotted clear">&nbsp;</div>
     <ul id="respond">
         <?php if ( !is_user_logged_in() ) : ?>
-        <li class="clearfix">
-            <label for="name">昵称</label>
-            <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="23" tabindex="1" />
+        <li class="clear">
+            <!-- <label for="name">昵称</label> -->
+            <input type="text" name="author" id="author" placeholder="昵称" value="<?php echo $comment_author; ?>" size="23" tabindex="1" />
+            <input type="email" name="email" id="email" placeholder="邮箱" value="<?php echo $comment_author_email; ?>" size="23" tabindex="2" />
         </li>
-        <li class="clearfix">
+<!--         <li class="clearfix">
             <label for="email">电子邮件</label>
             <input type="email" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="23" tabindex="2" />
-        </li>
+        </li> -->
 
 <!--         <li class="clearfix">
             <label for="email">网址(选填)</label>
             <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="23" tabindex="3" />
         </li> -->
         <?php else : ?>
-        <li class="clearfix">您已登录:<a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="退出登录">退出 &raquo;</a></li>
+        <li class="clear">您已登录:<a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="退出登录">退出 &raquo;</a></li>
         <?php endif; ?>
-        <li class="clearfix">
-            <label for="message">评论内容</label>
-            <textarea id="message comment" name="comment" tabindex="4" rows="3" cols="40"></textarea>
+        <li class="clear">
+            <!-- <label for="message">评论内容</label> -->
+            <textarea placeholder="Ctrl + Enter 提交" id="message comment" name="comment" tabindex="4" rows="3" cols="40"></textarea>
         </li>
-        <li class="clearfix">
+        <li class="clear">
             <!-- Add Comment Button -->
             <br />
-            <a id="comments_submit_button" href="javascript:void(0);" class="button medium black right">发表评论</a> </li>
+            <a id="comments_submit_button" href="javascript:void(0);" class="button medium black right none">发表评论</a> </li>
             <br />
             <br />
     </ul>
