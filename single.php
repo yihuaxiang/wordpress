@@ -7,7 +7,7 @@
 	<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 	<div id="main" class="left clear" style="margin-top:14px;">
 		<!-- Blog Post -->
-		<div class="post">
+		<div class="post shadow_box">
 			<!-- Post Title -->
 			<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<!-- Post Title -->

@@ -14,7 +14,7 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-                <div class="post clear">
+                <div class="post shadow_box clear">
                     <!-- Post Title -->
                     <h3 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
                     <!-- Post Data -->
@@ -26,7 +26,7 @@
                     <?php the_excerpt(); ?>
 
                     <!-- Read More Button -->
-                    <p class="clearfix"><a href="<?php the_permalink(); ?>" class="button right">阅读全文</a></p>
+                    <p class="clear"><a href="<?php the_permalink(); ?>" class="button right">阅读全文</a></p>
                 </div>
                 <div class="hr clearfix">&nbsp;</div>
 
@@ -42,7 +42,7 @@
         <!--<p class="clearfix"> <a href="#" class="button float">&lt;&lt; Previous Posts</a> <a href="#" class="button float right">Newer Posts >></a> </p>-->
         <!-- <p class="clearfix"><?php previous_posts_link('&lt;&lt; 上一页', 0); ?> <span class=""><?php next_posts_link('下一页 &gt;&gt;', 0); ?></span></p> -->
         <?php else : ?>
-        <div class="post">
+        <div class="post shadow_box">
             <h3 class="title"><a href="#" rel="bookmark">未找到</a></h3>
             <p>没有找到任何文章！</p>
         </div>

@@ -5,12 +5,18 @@
 }
 
 #comments{
-    border:1px solid #013a73;
+    border:1px solid #00b7e9;
     padding-top:20px;
     padding-left:20px;
     padding-right:20px;
+    background-color:white;
 }
-
+#comments a,#comments p,#comments span,#comments span,#comments textarea,#comments cite,#comments div{
+    color:#74C1BB;
+}
+#comments h3{
+    color:#00b7e9;
+}
 #comments .gravatar{
     float:left;
     padding-right:20px;
@@ -22,10 +28,8 @@
 #comments cite{
     font-size:14px;
     line-height:18px;
-    color:white;
 }
 #comments .commentmetadata{
-    color:white;
     line-height:18px;
     font-size:14px;
 }
@@ -126,9 +130,9 @@
 #comment_form input, #comment_form textarea {
     float:left;
     padding:8px;
-    border:1px solid #CCCCCC;
+    border:1px solid #00b7e9;
     margin-left:10px;
-    color:white;
+    color:#74C1BB;
     background:#fcfcfc;
     background-color:rgba(0,0,0,0);
     -moz-border-radius:5px;
@@ -166,4 +170,7 @@
     border: 1px #9B9BF7 solid;
     background-color: #2246F3;
 }
+
+
+
 

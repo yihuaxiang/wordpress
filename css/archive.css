@@ -1,5 +1,4 @@
 #archive{
-    border:1px #013a73 solid;
     position:relative;
     padding-left:20px;
 }
@@ -10,29 +9,25 @@
 }
 #archive ul li{
     float:left;
-    padding: 5px;
     padding-bottom:1px;
     margin-right:10px;
     margin-top:4px;
-    padding-top:1px;
     border-radius: 3px;
-    border: 1px #2222C7 solid;
-    background-color: #2A4056;
     -webkit-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
     -moz-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
     -o-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
     -ms-transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
     transition: all 0.8s cubic-bezier(0, 1.23, 0.68, 1.01);
 }
-#archive ul li:hover{
-    border: 1px #9B9BF7 solid;
-    background-color: #2246F3;
+#archive ul li a{
+    color:#00B7E9;
 }
+
 #archive h2,#archive h4{
     display:inline-block;
     font-size:24px;
     line-height:36px;
-    color:white;
+    color:#00b7e9;
     font-weight:400;
 }
 

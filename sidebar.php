@@ -1,6 +1,6 @@
    <!-- Column 2 / Sidebar -->
    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/sidebar.css" />
-   <div id="search_div" class="right">
+   <div id="search_div" class="right shadow_box">
         <ul>
             <li>
                 <form method="get" action="<?php echo get_option('home'); ?>">
@@ -13,7 +13,7 @@
             </li>
         </ul>
    </div>
-    <div id="sidebar" class="right">
+    <div id="sidebar" class="right shadow_box">
     <ul>
 
         <li>

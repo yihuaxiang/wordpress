@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/comments.css" />
-<div id="comments" class="clear">
+<div id="comments" class="clear shadow_box">
 <?php
     if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
         die ('Please do not load this page directly. Thanks!');

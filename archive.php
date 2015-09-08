@@ -3,12 +3,12 @@
 
 	<div id="main">
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/archive.css" />
-		<div id="archive">
+		<div id="archive" class="shadow_box">
 			<div class="sort_by">
 				<ul>
-					<li><a <?php if ( isset($_GET['order']) && ($_GET['order']=='rand') ) echo 'class="current"'; ?> href="<?php echo get_option("home") . '?' . http_build_query(array_merge($_GET, array('order' => 'rand'))); ?>">随机阅读</a></li>
-					<li><a <?php if ( isset($_GET['order']) && ($_GET['order']=='commented') ) echo 'class="current"'; ?> href="<?php echo  get_option("home") . '?' . http_build_query(array_merge($_GET, array('order' => 'commented'))); ?>">评论最多</a></li>
-					<li><a <?php if ( isset($_GET['order']) && ($_GET['order']=='alpha') ) echo 'class="current"'; ?> href="<?php echo  get_option("home") . '?' . http_build_query(array_merge($_GET, array('order' => 'alpha'))); ?>">标题排序</a></li>
+					<li class="button"><a <?php if ( isset($_GET['order']) && ($_GET['order']=='rand') ) echo 'class="current"'; ?> href="<?php echo get_option("home") . '?' . http_build_query(array_merge($_GET, array('order' => 'rand'))); ?>">随机阅读</a></li>
+					<li class="button"><a <?php if ( isset($_GET['order']) && ($_GET['order']=='commented') ) echo 'class="current"'; ?> href="<?php echo  get_option("home") . '?' . http_build_query(array_merge($_GET, array('order' => 'commented'))); ?>">评论最多</a></li>
+					<li class="button"><a <?php if ( isset($_GET['order']) && ($_GET['order']=='alpha') ) echo 'class="current"'; ?> href="<?php echo  get_option("home") . '?' . http_build_query(array_merge($_GET, array('order' => 'alpha'))); ?>">标题排序</a></li>
 				</ul>
 			</div>
 			<h4>浏览<?php
@@ -89,7 +89,7 @@ else if ( isset($_GET['order']) && ($_GET['order']=='alpha') )
     query_posts($arms);
 } if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<!-- Blog Post -->
-		<div class="post clear">
+		<div class="post shadow_box clear">
 			<!-- Post Title -->
 			<h3 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 			<!-- Post Data -->
@@ -113,7 +113,7 @@ else if ( isset($_GET['order']) && ($_GET['order']=='alpha') )
 		<!-- <p class="clearfix"><?php previous_posts_link('&lt;&lt; 查看新文章', 0); ?> <span class="float right"><?php next_posts_link('查看旧文章 &gt;&gt;', 0); ?></span></p> -->
 
 		<?php else : ?>
-		<div class="post">
+		<div class="post shadow_box">
 			<h3 class="title"><a href="#" rel="bookmark">未找到</a></h3>
 			<p>没有找到任何文章！</p>
 		</div>

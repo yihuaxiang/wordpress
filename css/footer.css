@@ -1,8 +1,11 @@
 #footer{
     text-align:center;
-    color:white;
+    color:#00B7E9;
     clear:both;
     line-height:24px;
+}
+#footer a{
+    color:#00B7E9;
 }
 #footer a:hover{
     text-decoration: underline;
@@ -43,7 +46,7 @@
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 #to_top span:last-of-type{
-    color:rgba(35, 80, 249, 0.68);
+    color:#00B7E9;
     position:absolute;
     top:-50px;
     left:0px;
