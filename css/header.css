@@ -38,7 +38,7 @@
 #navi ul li.current,#navi ul li.current_page_item{
     background:#02284f;
 }
-#navi ul li.current{
+#navi ul li.current,#navi ul li.current_page_item{
     height:68px;
 }
 #navi ul li a{

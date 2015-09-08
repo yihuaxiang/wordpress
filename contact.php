@@ -8,11 +8,11 @@ Template Name: contract
 
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/contact.css" />
 
-<div id="sidebar" class="right">
+<div id="sidebar" class="right shadow_box">
 	<!-- Column 2 / Sidebar -->
 	<div id="info">
 		<!-- Adress and Phone Details -->
-		<h4>地址邮箱：</h4>
+		<h4>地址：</h4>
 		<div class="hr dotted clearfix">&nbsp;</div>
 		<ul>
 			<li><span class="icon-location2"> </span>: 北京-朝阳</li>
@@ -39,11 +39,11 @@ Template Name: contract
 </div>
 
 <div class="hr grid_12 clearfix">&nbsp;</div>
-<div id="main">
+<div id="main" style="margin-top:0px;">
 	<!-- Caption Line -->
 	<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 
-		<div id="intro_div">
+		<div id="intro_div" class="shadow_box">
 			<h2 class="grid_12 caption clearfix"><?php echo the_title(); ?></h2>
 			<?php the_content(); ?>
 		</div>
