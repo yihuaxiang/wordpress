@@ -9,7 +9,7 @@
 		<!-- Blog Post -->
 		<div class="post shadow_box">
 			<!-- Post Title -->
-			<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<h3 class="title"  style="border-bottom:none;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<!-- Post Title -->
 			<p class="sub"><?php the_tags('<span class="icon-price-tags"></span>：', ', ', ''); ?> &bull; <span class="icon-clock"> </span><?php the_time('Y年n月j日') ?> &bull; <span class="icon-bubble"> </span><?php comments_popup_link('0 条评论', '1 条评论', '% 条评论', '', '评论已关闭'); ?></p>
 			<div class="hr dotted clearfix">&nbsp;</div>

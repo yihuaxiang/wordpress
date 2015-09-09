@@ -81,7 +81,7 @@ body{
     -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
     transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
 }
-#main .post:hover h3,#main .post:hover h3 a{
+#main .post:hover h3:first-of-type,#main .post:hover h3:first-of-type a{
     /*border:1px solid #88D3F9;*/
     /*padding-left:20px;*/
     color:#0D5AB1;
@@ -151,4 +151,5 @@ body{
     border: 1px solid #00b7e9;
     background: url("../images/main_back.png") white;
     box-shadow: 2px 2px 2px -2px #00b7e9;
+    border-radius:4px;
 }

@@ -44,7 +44,8 @@ Template Name: contract
 	<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 
 		<div id="intro_div" class="shadow_box">
-			<h2 class="grid_12 caption clearfix"><?php echo the_title(); ?></h2>
+			<h2 class="clearfix" style="margin-left:-20px;padding-left:17px;border-left:5px solid;"><?php echo the_title(); ?></h2>
+			<p style="border-bottom: 1px dashed rgb(80, 255, 255);height:0px;padding:0px;margin:0px;"></p>
 			<?php the_content(); ?>
 		</div>
 		<div class="hr clearfix">&nbsp;</div>

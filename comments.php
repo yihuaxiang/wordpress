@@ -71,7 +71,7 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
         <?php endif; ?>
         <li class="clear">
             <!-- <label for="message">评论内容</label> -->
-            <textarea placeholder="Ctrl + Enter 提交" id="message comment" name="comment" tabindex="4" rows="3" cols="40"></textarea>
+            <textarea placeholder="Ctrl + Enter 提交" id="message_comment" name="comment" tabindex="4" rows="3" cols="40"></textarea>
         </li>
         <li class="clear">
             <!-- Add Comment Button -->
