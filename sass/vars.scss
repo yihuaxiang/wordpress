@@ -1,0 +1,49 @@
+﻿$navi_back_color : #0d5ab1 !default;
+$main_width : 1200px !default;
+$body_back_color : #DADADA !default;
+
+$link_color : #88B7E9 !default;
+
+$text_grey : #999 !default;
+
+$less_button_color : #74C1BB !default;
+
+$button_color : #00B7E9 !default;
+$button_hover_color : #00B7E9 !default;
+$button_back_color : #E2E2E2 !default;
+$button_hover_back_color : #E2E2E2 !default;
+$button_border_color : #00B7E9 !default;
+$button_hover_border_color : #00B7E9 !default;
+
+
+
+@mixin myTransition($prop,$time,$fun){
+    -webkit-transition: #{$prop} #{$time} #{$fun};
+    -moz-transition: #{$prop} #{$time} #{$fun};
+    -o-transition: #{$prop} #{$time} #{$fun};
+    -ms-transition: #{$prop} #{$time} #{$fun};
+    transition: #{$prop} #{$time} #{$fun};
+}
+@mixin myBoxShadow($one:"0 0 0 white",$two:"0 0 0 white",$three:"0 0 0 white"){
+
+    -webkit-box-shadow:#{$one},#{$two},#{$three};
+    -moz-box-shadow:#{$one},#{$two},#{$three};
+    -o-box-shadow:#{$one},#{$two},#{$three};
+    -ms-box-shadow:#{$one},#{$two},#{$three};
+    box-shadow:#{$one},#{$two},#{$three};
+
+}
+
+@mixin myBorderRadius($value){
+    -webkit-border-radius:$value;
+    -moz-border-radius:$value;
+    -o-border-radius:$value;
+    -ms-border-radius:$value;
+    border-radius:$value;
+
+}
+
+@mixin myOpacity($value){
+    opacity: $value / 100;
+    filter: alpha(opacity=$value);
+}

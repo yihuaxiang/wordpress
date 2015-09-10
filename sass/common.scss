@@ -1,0 +1,157 @@
+@import "vars";
+
+body{
+    background-color:$body_back_color;
+}
+#wrapper{
+    width:$main_width;
+    display:block;
+    margin:0 auto;
+}
+
+
+.button{
+    height:19px;
+    line-height:19px;
+    padding: 5px;
+    padding-bottom:1px;
+    padding-top:1px;
+    border-radius: 3px;
+    color:$button_color;
+    border: 1px $button_border_color solid;
+    background-color: $button_back_color;
+
+
+    @include myTransition(all,0.8s,cubic-bezier(0, 1.23, 0.68, 1.01));
+
+    &:hover{
+        color:$button_hover_color;
+        border: 1px $button_hover_border_color solid;
+        background-color: $button_hover_back_color;
+    }
+}
+
+
+
+#main{
+    width:890px;
+    margin-top:14px;
+    float:left;
+
+    .post{
+        color:$text_grey;
+        padding:17px;
+        padding-left:0px;
+        padding-left:20px;
+        word-break: break-word;
+
+        &:hover{
+            & > h3:first-of-type{
+                color:#0D5AB1;
+
+                & a{
+                    color:#0D5AB1;
+                }
+            }
+        }
+
+        @include myTransition(all,0.5s,cubic-bezier(0, 1.23, 0.68, 1.01));
+
+        & > h3:first-of-type{
+            margin-left:-20px;
+            @include myTransition(all,0.5s,cubic-bezier(0, 1.23, 0.68, 1.01));
+            border-left:5px currentColor solid;
+            line-height: 40px;
+
+            & > a{
+                color:$button_color;
+                font-size:24px;
+                @include myTransition(all,0.5s,cubic-bezier(0, 1.23, 0.68, 1.01));
+            }
+
+        }
+
+        & > p:first-of-type{
+            border-bottom: 1px dashed rgb(80, 255, 255);
+            line-height: 24px;
+
+            & > a:not(.button){
+                color:$button_color;
+            }
+
+        }
+
+        & > h3:first-of-type,& > p:first-of-type{
+            padding-left:17px;
+            color:$button_color;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+#main .pagenav{
+    text-align:center;
+
+    & p{
+        display:inline-block;
+
+        & a.total:last-child{
+            margin:0px;
+            padding-left:3px;
+            background-color: rgba(0,0,0,0);
+            border-color:rgba(0,0,0,0);
+        }
+    }
+
+    & a,& span{
+        margin: 0 2px;
+        float: left;
+        padding: 5px 12px;
+        background-color: white;
+        color: #666;
+
+        @include myBorderRadius(2px);
+        @include myOpacity(88);
+    }
+
+    & .current{
+        background-color: rgb(42, 121, 171);
+        color: #fff;
+    }
+
+
+}
+
+
+
+
+
+::-webkit-input-placeholder{
+    color:$less_button_color;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $less_button_color;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    $less_button_color;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $less_button_color;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    $less_button_color;
+}
+
+
+.shadow_box{
+    border: 1px solid $button_color;
+    background: url("../images/main_back.png") white;
+    @include myBoxShadow($one:"2px 2px 2px -2px $button_color");
+    @include myBorderRadius(4px);
+}

@@ -1,0 +1,30 @@
+﻿@import "vars";
+
+
+#main{
+
+    & p{
+        color:$text_grey;
+    }
+
+    & .post{
+        & p.relative{
+            height:23px;
+
+            & a:last-child{
+                position:absolute;
+                top:0px;
+                right:0px;
+                height:19px;
+                line-height:19px;
+            }
+
+            & a:first-child{
+                position:absolute;
+                top:0px;
+                left:0px;
+            }
+        }
+    }
+}
+

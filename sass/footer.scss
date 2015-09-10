@@ -1,0 +1,73 @@
+﻿@import "vars";
+
+#footer{
+    text-align:center;
+    color:$link_color;
+    clear:both;
+    line-height:24px;
+
+    & a{
+        color:$link_color;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    img{
+        vertical-align: middle;
+    }
+}
+
+#to_top{
+    position:fixed;
+    display:block;
+    bottom:50px;
+    right:50px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+    opacity: 0;
+    overflow:hidden;
+
+
+    @include myTransition(all,0.8s,cubic-bezier(0, 1.23, 0.68, 1.01));
+
+    &:hover{
+        & span:last-of-type{
+            top:0px;
+        }
+        & span:first-of-type{
+            top:50px;
+        }
+    }
+
+    &.show{
+        @include myOpacity(100);
+    }
+
+    & span:first-of-type{
+        color:white;
+        position:relative;
+        top:0px;
+        z-index:1;
+
+
+        @include myTransition(all,0.5s,cubic-bezier(0.25, 0.46, 0.45, 0.94));
+    }
+
+    & span:last-of-type{
+        color:$button_color;
+        position:absolute;
+        top:-50px;
+        left:0px;
+        z-index:10;
+
+
+        @include myTransition(all,0.5s,cubic-bezier(0.25, 0.46, 0.45, 0.94));
+    }
+
+
+}
+
+

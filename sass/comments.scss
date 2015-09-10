@@ -1,0 +1,196 @@
+﻿@import "vars";
+
+
+#main > .post > h3:first-of-type{
+    font-size:21px;
+    color:white;
+    line-height:40px;
+    border-bottom: 1px dashed rgb(80, 255, 255);
+}
+
+#comments{
+    border:1px solid $button_color;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:white;
+    word-break: break-all;
+
+    & a,& p,& span,& textarea,& cite,& div{
+        color:$less_button_color;
+    }
+
+    & h3{
+        color:$button_color;
+    }
+
+    & .gravatar{
+        float:left;
+        padding-right:20px;
+    }
+
+    & cite{
+        font-size:14px;
+        line-height:18px;
+    }
+
+    & .commentmetadata{
+        line-height:18px;
+        font-size:14px;
+    }
+
+    & .comment_text{
+        color:$text_grey;
+        line-height:18px;
+        font-size:14px;
+
+        & p{
+            :before,:after{
+                content:'“';
+               font-size:20px;
+            }
+
+        }
+    }
+
+    & li{
+        padding-bottom:0px;
+    }
+}
+
+#main #comments cite,#main #comments .comment-meta{
+    line-height:24px;
+}
+
+
+#contact_form{
+
+    & ul{
+        float:left;
+
+        & li{
+            margin:10px 0;
+            list-style:none;
+            position:relative;
+            clear:both;
+        }
+    }
+
+    & label{
+        line-height:35px;
+        width:100px;
+        text-align:right;
+        float:left;
+        margin-right:10px;
+    }
+
+    & input#name,& input#email,& input#subject,& textarea{
+        float:left;
+        padding:8px;
+        border:1px solid #CCCCCC;
+        margin-left:10px;
+        background:#fcfcfc;
+
+        @include myBorderRadius(5px);
+    }
+
+    & input#name,& input#email,& input#subject{
+        width:400px;
+    }
+    & textarea{
+        width:500px;
+        height:150px;
+        resize:none;
+    }
+
+    & input.button{
+        float:right;
+    }
+}
+
+/* Comment form */
+
+#comment_form{
+    & input ,& textarea{
+        @include myTransition(all,0.9s,cubic-bezier(0, 1.23, 0.68, 1.01));
+    }
+
+    & input.error,textarea.error{
+        border-color:red;
+    }
+
+    & ul{
+        float:left;
+        width:100%;
+
+        & li{
+            margin:10px 0;
+            list-style:none;
+            position:relative;
+            clear:both;
+
+            & input:first-of-type{
+                width:35%;
+            }
+            & input:last-of-type{
+                width:58%;
+                height:11px;
+                line-height: 20px;
+            }
+            & textarea{
+                width:96%;
+                overflow: hidden;
+                height:150px;
+                resize:none;
+            }
+
+            & input,& textarea{
+                float:left;
+                padding:8px;
+                border:1px solid $button_color;
+                margin-left:10px;
+                color:$less_button_color;
+                background:#fcfcfc;
+                background-color:rgba(0,0,0,0);
+
+                @include myBorderRadius(5px);
+
+                outline:none;
+            }
+        }
+    }
+
+    & label{
+        line-height:35px;
+        color:white;
+        width:100px;
+        text-align:right;
+        float:left;
+        margin-right:10px;
+    }
+}
+
+
+#comments_submit_button{
+    padding:5px;
+    padding-top:0px;
+    padding-bottom:0px;
+    @include myBorderRadius(3px);
+    border:1px #2222C7 solid;
+    background-color:#2A4056;
+
+    @include myTransition(all,0.8s,cubic-bezier(0, 1.23, 0.68, 1.01));
+
+    &:hover{
+        padding: 5px;
+        padding-top:0px;
+        padding-bottom:0px;
+        @include myBorderRadius(3px);
+        border: 1px #9B9BF7 solid;
+        background-color: #2246F3;
+    }
+}
+
+
+
+
