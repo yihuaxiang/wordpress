@@ -4,6 +4,8 @@ $left_width : 890px !default;
 $right_width : 300px !default;
 $body_back_color : #DADADA !default;
 
+
+
 $link_color : #88B7E9 !default;
 
 $text_grey : #999 !default;
@@ -23,6 +25,18 @@ $button_hover_border_color : #00B7E9 !default;
     margin:0px;
     height:$height;
     width:$width;
+}
+
+@mixin a_colors($frontColor:#88B7E9,$hoverColor:$frontColor,$visitedColor:$frontColor){
+    color:$frontColor;
+
+    &:hover{
+        color:$hoverColor;
+    }
+
+    &:visited{
+        color:$visitedColor;
+    }
 }
 
 @mixin box_border($color:$button_color,$width:1px,$type:solid){
@@ -220,4 +234,38 @@ $button_hover_border_color : #00B7E9 !default;
     &:before{
         @include triangle(top,6px,red);
     }
+}
+
+
+#one{
+    & > {
+        .one{
+            padding:3px;
+        }
+        .two{
+            padding:4px;
+        }
+    }
+}
+
+
+//line-break
+
+.error{
+    background:blue;
+    border:1px red solid;
+}
+
+.seriousError{
+    @extend .error;
+    border-width:3px;
+}
+
+.one .two{
+    @extend .c;
+}
+
+
+.a .b .bb .c{
+    font-size:29px;
 }

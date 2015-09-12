@@ -77,6 +77,21 @@
   border-left: 6px dashed transparent;
   border-right: 6px dashed transparent; }
 
+#one > .one {
+  padding: 3px; }
+#one > .two {
+  padding: 4px; }
+
+.error, .seriousError {
+  background: blue;
+  border: 1px red solid; }
+
+.seriousError {
+  border-width: 3px; }
+
+.a .b .bb .c, .a .b .bb .one .two, .one .a .b .bb .two {
+  font-size: 29px; }
+
 #navi {
   height: 64px;
   background: #0d5ab1;

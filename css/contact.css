@@ -1,2 +1,141 @@
-.parent{position:relative}.child_with_unknown_dimensions{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.child_with_known_width{position:absolute;top:50%;left:50%;width:400px;margin-left:-200px;transform:translateY(-50%)}.child_with_known_height{position:absolute;top:50%;left:50%;height:400px;margin-top:-200px;transform:translateX(-50%)}.child_width_known_demensions{position:absolute;top:50%;left:50%;width:400px;height:400px;margin-left:-200px;margin-top:-200px}#myId{color:transparent;text-shadow:none;background-color:transparent;border:0px}#mySecondId:before{content:"";display:table}#mySecondId:after{clear:both}.triangle:before{content:"";height:0px;width:0px;overflow:hidden}.button-disabled{background-color:#e6e6e6 !important;color:#ababab !important;cursor:not-allowed !important}.horizontal-line{border-bottom:1px dashed grey;padding-top:15px;padding-bottom:15px}#myId{width:300px}#mySecondId{width:300px}.test1{content:Hello World}.test2{content:helloWorld}.triangle:before{border-bottom:6px solid red;border-left:6px dashed transparent;border-right:6px dashed transparent}#main h2:first-of-type{font-size:24px;line-height:40px;color:#00B7E9}#main p{color:#999;line-height:24px}#intro_div{padding-left:20px;padding-top:20px;padding-bottom:20px;margin-top:6px;padding-right:20px}#info a,#info p,#info h4,#info li{color:#00B7E9}#sidebar{width:300px;padding-left:0px;color:white;margin-top:14px}#sidebar>div{padding-top:20px}#sidebar>div>*{padding-left:20px}#sidebar>div>h4{border-bottom:1px #00B7E9 solid;border-top:1px #00B7E9 solid;position:relative}#sidebar>div>h4:before{content:"";width:119px;height:0px;position:absolute;top:-1px;left:-1px;border-bottom:3px #00B7E9 solid}#sidebar #info h4{font-size:18px;line-height:36px}#sidebar #info li{height:24px;line-height:24px}
+.parent {
+  position: relative; }
+
+.child_with_unknown_dimensions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.child_with_known_width {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  transform: translateY(-50%); }
+
+.child_with_known_height {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  margin-top: -200px;
+  transform: translateX(-50%); }
+
+.child_width_known_demensions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  margin-top: -200px; }
+
+#myId {
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0px; }
+
+#mySecondId:before {
+  content: "";
+  display: table; }
+#mySecondId:after {
+  clear: both; }
+
+.triangle:before {
+  content: "";
+  height: 0px;
+  width: 0px;
+  overflow: hidden; }
+
+.button-disabled {
+  background-color: #e6e6e6 !important;
+  color: #ababab !important;
+  cursor: not-allowed !important; }
+
+.horizontal-line {
+  border-bottom: 1px dashed grey;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+#myId {
+  width: 300px; }
+
+#mySecondId {
+  width: 300px; }
+
+.test1 {
+  content: Hello World; }
+
+.test2 {
+  content: helloWorld; }
+
+.triangle:before {
+  border-bottom: 6px solid red;
+  border-left: 6px dashed transparent;
+  border-right: 6px dashed transparent; }
+
+#one > .one {
+  padding: 3px; }
+#one > .two {
+  padding: 4px; }
+
+.error, .seriousError {
+  background: blue;
+  border: 1px red solid; }
+
+.seriousError {
+  border-width: 3px; }
+
+.a .b .bb .c, .a .b .bb .one .two, .one .a .b .bb .two {
+  font-size: 29px; }
+
+#main h2:first-of-type {
+  font-size: 24px;
+  line-height: 40px;
+  color: #00B7E9; }
+#main p {
+  color: #999;
+  line-height: 24px; }
+
+#intro_div {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 6px;
+  padding-right: 20px; }
+
+#info a, #info p, #info h4, #info li {
+  color: #00B7E9; }
+
+#sidebar {
+  width: 300px;
+  padding-left: 0px;
+  color: white;
+  margin-top: 14px; }
+  #sidebar > div {
+    padding-top: 20px; }
+    #sidebar > div > * {
+      padding-left: 20px; }
+    #sidebar > div > h4 {
+      border-bottom: 1px #00B7E9 solid;
+      border-top: 1px #00B7E9 solid;
+      position: relative; }
+      #sidebar > div > h4:before {
+        content: "";
+        width: 119px;
+        height: 0px;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        border-bottom: 3px #00B7E9 solid; }
+  #sidebar #info h4 {
+    font-size: 18px;
+    line-height: 36px; }
+  #sidebar #info li {
+    height: 24px;
+    line-height: 24px; }
+
 /*# sourceMappingURL=contact.css.map */
