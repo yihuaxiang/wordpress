@@ -112,6 +112,10 @@
     margin-left: 20px; }
     #navi h1 a {
       color: white; }
+      #navi h1 a:visited {
+        color: white; }
+      #navi h1 a:hover {
+        color: white; }
   #navi ul {
     position: absolute;
     top: 0px;

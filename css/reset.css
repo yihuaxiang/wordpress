@@ -165,9 +165,9 @@ a:hover {
 
 a {
   color: #88B7E9; }
-  a:hover {
-    color: #88B7E9; }
   a:visited {
+    color: #88B7E9; }
+  a:hover {
     color: #88B7E9; }
 
 abbr[title], acronym[title] {

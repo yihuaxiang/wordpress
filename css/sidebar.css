@@ -107,15 +107,18 @@
 #sidebar {
   margin-top: 8px; }
 
+#sidebar a {
+  color: #00B7E9; }
+  #sidebar a:visited {
+    color: #00B7E9; }
+  #sidebar a:hover {
+    color: #0D5AB1; }
+
 #sidebar a:hover {
-  color: #0D5AB1;
   -webkit-transition: all, 0.5s, cubic-bezier(0, 1.23, 0.68, 1.01);
   -o-transition: all, 0.5s, cubic-bezier(0, 1.23, 0.68, 1.01);
   -moz-transition: all, 0.5s, cubic-bezier(0, 1.23, 0.68, 1.01);
   -ms-transition: all, 0.5s, cubic-bezier(0, 1.23, 0.68, 1.01); }
-
-#sidebar a {
-  color: #00B7E9; }
 
 #search {
   float: left;

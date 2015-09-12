@@ -27,15 +27,16 @@ $button_hover_border_color : #00B7E9 !default;
     width:$width;
 }
 
-@mixin a_colors($frontColor:#88B7E9,$hoverColor:$frontColor,$visitedColor:$frontColor){
+@mixin a_colors($frontColor:#88B7E9,$hoverColor:$frontColor,$visitedColor:$hoverColor){
     color:$frontColor;
 
-    &:hover{
-        color:$hoverColor;
-    }
 
     &:visited{
         color:$visitedColor;
+    }
+
+    &:hover{
+        color:$hoverColor;
     }
 }
 

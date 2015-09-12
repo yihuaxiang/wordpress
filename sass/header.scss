@@ -20,11 +20,7 @@
         margin-left:20px;
 
         a{
-            color:white;
-
-            &:hover{
-
-            }
+            @include a_colors(white);
         }
     }
 
