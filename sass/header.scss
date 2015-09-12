@@ -4,7 +4,7 @@
     height: 64px;
     background: $navi_back_color;
     position:relative;
-    @include myBoxShadow($one:"1px 1px 2px #0d5ab1",$two:"2px 2px 2px #2F4258",$three:"0 0 0 white");
+    @include myBoxShadow(1px 1px 2px #0d5ab1,2px 2px 2px #2F4258,0 0 0 white);
 
     .container{
         width:$main_width;
@@ -20,7 +20,7 @@
         margin-left:20px;
 
         a{
-
+            color:white;
 
             &:hover{
 
@@ -46,13 +46,14 @@
                 display:inline-block;
                 height:100%;
                 width:100%;
+                color:white;
                 font-size:22px;
                 padding:0 15px;
             }
         }
 
         li:not(.current):not(.current_page_item):hover{
-            @include myBoxShadow($one:"0px 3px 10px 2px rgba(5, 28, 113,0.26)",$two:"0 0 0 white",$three:"0 0 0 white");
+            @include myBoxShadow(0px 3px 10px 2px rgba(5, 28, 113,0.26),0 0 0 white,0 0 0 white);
             background-color: rgba(4, 75, 154, 0.27);
         }
 

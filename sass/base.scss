@@ -1,4 +1,6 @@
-﻿/*
+﻿@import "vars";
+
+/*
 Theme Name: 移花香
 Theme URI: 51shazhu.com
 Description: 51shazhu.com
@@ -7,6 +9,7 @@ Author: 移花香
 Author URI: 51shazhu.com
 Tags: 51shazhu.com
 */
+
 
 /* Global Styles */
 .left{
@@ -22,7 +25,7 @@ Tags: 51shazhu.com
 
 }
 a{
-    color:white;
+    color:#999;
 }
 a:hover{
     text-decoration: none;
@@ -41,4 +44,40 @@ div.hr{
 }
 p{
     line-height: 24px;
+}
+
+
+@mixin prefixer($property,$value,$prefixes:webkit o moz ms){
+    @each $prefix in $prefixes {
+        -#{$prefix}-#{$property}:$value;
+    }
+}
+
+
+@mixin box-shadow($shadow...){
+    @if length($shadow) >= 1{
+        @include prefixer("box-shadow",$shadow);
+    }@else{
+        $shadow:0 0 4px red;
+        @include prefixer("box-shadow",$shadow);
+    }
+}
+
+@mixin test($props){
+    @each $prop in $props{
+        #{$prop}:none;
+    }
+}
+
+
+.shadow{
+    @include box-shadow();
+}
+.shadow1{
+    @include box-shadow(2px 2px 2px blue,3px 3px 3px red,4px 4px 4px yellow);
+}
+
+
+.none{
+    @include test( (one,two) );
 }

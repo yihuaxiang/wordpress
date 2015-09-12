@@ -1,4 +1,83 @@
 @charset "UTF-8";
+.parent {
+  position: relative; }
+
+.child_with_unknown_dimensions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.child_with_known_width {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  transform: translateY(-50%); }
+
+.child_with_known_height {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  margin-top: -200px;
+  transform: translateX(-50%); }
+
+.child_width_known_demensions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  margin-top: -200px; }
+
+#myId {
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0px; }
+
+#mySecondId:before {
+  content: "";
+  display: table; }
+#mySecondId:after {
+  clear: both; }
+
+.triangle:before {
+  content: "";
+  height: 0px;
+  width: 0px;
+  overflow: hidden; }
+
+.button-disabled {
+  background-color: #e6e6e6 !important;
+  color: #ababab !important;
+  cursor: not-allowed !important; }
+
+.horizontal-line {
+  border-bottom: 1px dashed grey;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+#myId {
+  width: 300px; }
+
+#mySecondId {
+  width: 300px; }
+
+.test1 {
+  content: Hello World; }
+
+.test2 {
+  content: helloWorld; }
+
+.triangle:before {
+  border-bottom: 6px solid red;
+  border-left: 6px dashed transparent;
+  border-right: 6px dashed transparent; }
+
 /*
 Theme Name: 移花香
 Theme URI: 51shazhu.com
@@ -21,7 +100,7 @@ Tags: 51shazhu.com
   clear: both; }
 
 a {
-  color: white; }
+  color: #999; }
 
 a:hover {
   text-decoration: none; }
@@ -40,5 +119,21 @@ div.hr {
 
 p {
   line-height: 24px; }
+
+.shadow {
+  -webkit-box-shadow: 0 0 4px red;
+  -o-box-shadow: 0 0 4px red;
+  -moz-box-shadow: 0 0 4px red;
+  -ms-box-shadow: 0 0 4px red; }
+
+.shadow1 {
+  -webkit-box-shadow: 2px 2px 2px blue, 3px 3px 3px red, 4px 4px 4px yellow;
+  -o-box-shadow: 2px 2px 2px blue, 3px 3px 3px red, 4px 4px 4px yellow;
+  -moz-box-shadow: 2px 2px 2px blue, 3px 3px 3px red, 4px 4px 4px yellow;
+  -ms-box-shadow: 2px 2px 2px blue, 3px 3px 3px red, 4px 4px 4px yellow; }
+
+.none {
+  one: none;
+  two: none; }
 
 /*# sourceMappingURL=base.css.map */

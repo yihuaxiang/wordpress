@@ -27,7 +27,7 @@
     color:white;
     font-size:40px;
     cursor:pointer;
-    opacity: 0;
+    @include myOpacity(0);
     overflow:hidden;
 
 

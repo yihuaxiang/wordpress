@@ -18,11 +18,9 @@
 }
 #sidebar a:hover{
     color:#0D5AB1;
-    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+
+
+    @include myTransition(all,0.5s,cubic-bezier(0, 1.23, 0.68, 1.01));
 }
 #sidebar a{
     color:$button_color;
@@ -30,7 +28,7 @@
 #search{
     float: left;
     color: $less_button_color;
-    border: solid 1px $button_color;
+    @include box_border();
     border-radius:2px 0px 0px 2px;
     width: 45%;
     height: 32px;
@@ -40,11 +38,8 @@
     border-radius: 2px 0 0 2px;
     outline: none;
 
-    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+
+    @include myTransition(all,0.5s,cubic-bezier(0, 1.23, 0.68, 1.01));
 }
 
 #search:focus{
@@ -75,11 +70,9 @@
     height:46px;
     color:$button_color;
     line-height:46px;
-    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+
+
+    @include myTransition(all,0.5s,cubic-bezier(0, 1.23, 0.68, 1.01));
 }
 #sidebar > ul > li:hover > h4{
     padding-left:20px;
@@ -91,11 +84,9 @@
     padding-left:20px;
     padding-right:20px;
     overflow:hidden;
-    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+
+
+    @include myTransition(all,0.5s,cubic-bezier(0, 1.23, 0.68, 1.01));
 }
 #sidebar >  ul > li:last-of-type{
     border-bottom:0px;
@@ -112,11 +103,7 @@
     left: 0px;
     border-bottom: 3px $button_color solid;
 
-    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
-    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    @include myTransition(all,0.5s,cubic-bezier(0, 1.23, 0.68, 1.01));
 }
 #sidebar > ul > li:hover:before{
     content: "";

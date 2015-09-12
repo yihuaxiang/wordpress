@@ -150,8 +150,8 @@ body{
 
 
 .shadow_box{
-    border: 1px solid $button_color;
+    @include box_border($width:1px,$type:solid);
     background: url("../images/main_back.png") white;
-    @include myBoxShadow($one:"2px 2px 2px -2px $button_color");
+    @include myBoxShadow(2px 2px 2px -2px $button_color);
     @include myBorderRadius(4px);
 }

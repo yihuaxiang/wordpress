@@ -38,6 +38,9 @@ $(function(){
         }
     })
 
+
+
+
     var $textarea=$("#message_comment");
     var textarea=$textarea[0];
 
@@ -82,4 +85,6 @@ $(function(){
             event.preventDefault();
         }
     })
+
+
 })

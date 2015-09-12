@@ -1,11 +1,29 @@
 @charset "UTF-8";
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
-dl, dt, dd, ul, ol, li,
-pre,
-fieldset, lengend, button, input, textarea,
-th, td {
-  margin: 0;
-  padding: 0; }
+body {
+  padding: 0px;
+  margin: 0px; }
+
+html :not(.no-reset) body, html :not(.no-reset) h1, html :not(.no-reset) h2, html :not(.no-reset) h3, html :not(.no-reset) h4, html :not(.no-reset) h5, html :not(.no-reset) h6, html :not(.no-reset) hr, html :not(.no-reset) p, html :not(.no-reset) blockquote, html :not(.no-reset) dl, html :not(.no-reset) dt, html :not(.no-reset) dd, html :not(.no-reset) ul, html :not(.no-reset) ol, html :not(.no-reset) li, html :not(.no-reset) pre, html :not(.no-reset) fieldset, html :not(.no-reset) lengend, html :not(.no-reset) button, html :not(.no-reset) input, html :not(.no-reset) textarea, html :not(.no-reset) th, html :not(.no-reset) td {
+  margin: 0px;
+  padding: 0px; }
+html .no-reset h1 {
+  font-size: 24px;
+  line-height: 40px; }
+html .no-reset h2 {
+  font-size: 20px;
+  line-height: 36px; }
+html .no-reset h3 {
+  font-size: 18px;
+  line-height: 30px; }
+html .no-reset h4 {
+  font-size: 16px;
+  line-height: 24px; }
+html .no-reset h5 {
+  font-size: 14px;
+  line-height: 20px; }
+html .no-reset p, html .no-reset h6, html .no-reset li {
+  font-size: 14px;
+  line-height: 20px; }
 
 body,
 button, input, select, textarea {

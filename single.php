@@ -16,7 +16,9 @@
 			<!-- Post Title -->
 			<!--<img class="thumb" src="<?php bloginfo('template_url'); ?>/images//610x150.gif" alt=""/>-->
 			<!-- Post Content -->
-			<?php the_content(); ?>
+			<div class="no-reset">
+				<?php the_content(); ?>
+			</div>
 			<!-- Post Links -->
 			<br />
 			<p class="relative"> <a href="<?php echo get_option('home'); ?>" class="button float" >&lt;&lt; 返回首页</a> <a href="#comment_form" class="button float" >发表评论</a> </p>
